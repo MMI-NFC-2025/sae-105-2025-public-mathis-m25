@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM :Michel
+- PRÉNOM : Mathis
+- GROUPE : A2
+- URL du site : https://sae105michelmathis.netlify.app/
+- URL FIGMA : https://www.figma.com/design/bvfeQnNvYtOYOpQXP9YwjF/Pr%C3%A9pa-SAE-105-MICHEL-Mathis?node-id=0-1&p=f&t=dTYOeAn0i5mr1Q1Q-0
 
 ## Sujet
 

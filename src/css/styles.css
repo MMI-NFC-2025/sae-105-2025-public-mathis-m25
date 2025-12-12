@@ -411,26 +411,63 @@ h3 { font-size: 1.4rem; }
 /* NOUVELLE SECTION : COMPOSANTS DE LA PAGE DU PROGRAMME */
 /* ========================================= */
 
-.section--context {
-    margin: var(--spacing-xl) 0;
-    
-    background-color: var(--color-background-medium); /* Utiliser un gris foncé */
-    
-    padding: var(--spacing-xl) var(--spacing-md);
-    
-    border-radius: var(--border-radius); 
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.section--context .section__paragraph--narrow {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; /
+/* 1. Titre (pour s'assurer qu'il est bien centré et séparé) */
+.section--context .section__title {
+    margin-bottom: var(--spacing-lg); 
 }
 
 .section--context .figure-image {
-    margin-top: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+.section--context .figure-image__media {
+    width: 75%; 
+    height: auto;
+    border-radius: var(--border-radius); 
+    object-fit: cover;
+    margin-bottom: var(--spacing-lg);    
+}
+
+.section--context .section__paragraph--narrow {
+    text-align: left; 
+    padding: 0 var(--spacing-md); 
+}
+
+.section--context .link--more {
+    display: block; 
+    margin-top: var(--spacing-lg);
+}
+
+.mission-item {
     margin-bottom: var(--spacing-lg);
+}
+
+.section--context {
+    margin-top: var(--spacing-xl); 
+    margin-bottom: var(--spacing-xl); 
+    
+    background-color: transparent; 
+    padding: 0; 
+    border-radius: 0; 
+    box-shadow: none;
+    
+    text-align: left; 
+}
+
+.section--missions {
+    text-align: left; 
+    
+    padding-top: var(--spacing-xl);
+    
+    padding-bottom: var(--spacing-md); /* Utilisez MD ou XS, ou 0 si vous voulez le coller vraiment */
+}
+
+.section--missions .section__title {
+    text-align: left;
+    margin-bottom: var(--spacing-xl); 
+    padding-left: var(--spacing-md); 
+}
+
+.missions-list {    
+    margin-bottom: 0;     
 }
