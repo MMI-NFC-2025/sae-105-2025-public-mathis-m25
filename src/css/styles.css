@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;700&family=Caesar+Dressing&family=Roboto:wght@400;700&display=swap');
+
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles appliqués au corps du document */
+body {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light);
+    font-family: var(--font-family-body);
+    line-height: 1.6; 
+}
+
+/* Liens */
+a {
+    color: var(--color-accent-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-accent-secondary); 
+}
+
+/* Titres */
+h1, h2, h3 {
+    font-family: var(--font-family-heading);
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-md);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+
+/* ========================================= */
+/* NOUVELLE SECTION : COMPOSANTS DE LA PAGE D'ACCUEIL */
+/* ========================================= */
+
+/* -- BLOCK: Hero Section -- */
+.hero-section {
+    /* Styles généraux de la section Hero (background-image, padding, alignement) */
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-image: url('../img/image2.avif');
+    background-size: cover;
+    background-position: center center;
+    min-height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.hero-section__title--fancy {
+    font-family: 'Caesar Dressing', serif;
+    font-weight: 400; 
+    font-size: 3.5rem; 
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.1;
+
+    color: var(--color-text-light);
+
+    text-shadow:
+        3px 3px 0 var(--color-background-dark),   /* Ombre noire pour le contour (haut-droit) */
+        -3px -3px 0 var(--color-background-dark),  /* Noir (bas-gauche) */
+        3px -3px 0 var(--color-background-dark),   /* Noir (bas-droit) */
+        -3px 3px 0 var(--color-background-dark);  /* Noir (haut-gauche) */
+        0px 3px 0 var(--color-background-dark), /* Ombre verticale pure */
+        3px 0px 0 var(--color-background-dark); /* Ombre horizontale pure */
+}
+
+.hero-section__tagline--roboto {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    color: var(--color-text-light); 
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.1rem;
+
+    color: var(--color-text-light);
+
+    text-shadow:
+        1px 1px 0 var(--color-background-dark), 
+        -1px -1px 0 var(--color-background-dark);
+}
+
+/* -- BLOCK: Bouton -- */
+.button {
+    display: inline-block;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: 4px solid var(--color-header);
+    transition: background-color 0.3s ease;
+}
+
+.button--primary { /* Style Bleu Électrique */
+    background-color: var(--color-accent-primary);
+    color: var(--color-background-dark); /* Texte sombre sur fond clair */
+}
+
+.button--secondary { /* Style Vert Néon (Télécharger PDF) */
+    background-color: var(--color-accent-secondary);
+    color: var(--color-background-dark);
+}
+
+/* -- BLOCK: Header/Navigation -- */
+.header {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-header);
+}
+
+.header__logo {
+    color: var(--color-text-light);
+    display: inline-block;
+}
+
+.header__logo-image {
+    height: 35px;
+    width: auto;
+}
+
+.header__burger-icon {
+    border: none; 
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .header__logo-image {
+        height: 45px;
+    }
+}
+
+/* -- BLOCK: Carte d'Artiste (Composant Réutilisable) -- */
+.artist-card {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    background-color: #1A1A1A; /* Fond légèrement plus clair pour le contraste */
+    border-radius: var(--border-radius);
+}
+
+.artist-card__image {
+    width: 95px;
+    height: 125px;
+    border-radius: var(--border-radius); 
+    object-fit: cover;
+    margin-right: var(--spacing-md);
+}
+
+.artist-card_name {
+    font-family: var(--font-family-artist);
+    font-size: 1.2rem;
+    color: var(--color-text-light); 
+    margin-bottom: var(--spacing-xs); 
+    font-weight: bold;
+}
+
+.artist-card__time {
+    font-family: var(--font-family-time-genre);
+    color: var(--color-accent-primary); /* Heure en Bleu Électrique */
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.artist-card__genre {
+    color: var(--color-accent-secondary); /* Genre en Vert Néon */
+    font-size: 0.8rem;
+    margin-top: var(--spacing-xs);
+    font-family: var(--font-family-time-genre);
+}
+
+/* EXEMPLE : Pour les écrans plus grands que 768px */
+@media (min-width: 768px) {
+    body {
+        font-size: 1.1rem;
+    }
+    .artist-card {
+        padding: var(--spacing-lg);
+    }
+}

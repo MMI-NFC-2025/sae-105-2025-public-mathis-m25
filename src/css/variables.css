@@ -1,0 +1,24 @@
+:root {
+    /* COULEURS */
+    --color-background-dark: #242424; /* Noir Profond (Thème Nuit) */
+    --color-text-light: #FFFFFF;     /* Blanc Pur */
+    --color-text-secondary: #AAAAAA; /* Gris Clair pour les détails */
+    --color-header: #1D096F; /* Bleu Nuit Profond (Header, Footer) */
+    
+    --color-accent-primary: #00BFFF; /* Bleu Électrique (CTA, Heures, Liens Actifs) */
+    --color-accent-secondary: #7CFC00; /* Vert Néon (Écologie, Boutons Secondaires) */
+
+    /* TYPOGRAPHIE */
+    --font-family-heading: 'Oswald', sans-serif; 
+    --font-family-body: 'Inter', sans-serif;
+
+    /* ESPACEMENT (Base 8px) */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+
+    /* RAYONS / OMBRES */
+    --border-radius: 8px;
+}
