@@ -195,3 +195,63 @@ h3 { font-size: 1.4rem; }
         padding: var(--spacing-lg);
     }
 }
+
+/* -- BLOCK: Footer -- */
+.footer {
+    background-color: var(--color-footer); 
+    padding: var(--spacing-sm) var(--spacing-md);
+    color: var(--color-text-light);    
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.footer h3 {
+    color: var(--color-text-light); /* Exemple : Titres en Bleu Électrique */
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.footer__links {
+    list-style: none; 
+    padding: 0;
+    margin-bottom: var(--spacing-lg); 
+}
+
+.footer__links a {
+    color: var(--color-text-light);
+    display: block; 
+    padding: var(--spacing-xs) 0;
+    font-size: 0.9rem;
+}
+
+.footer__copyright {
+    font-size: 0.75rem;
+    margin-top: var(--spacing-lg);
+    color: var(--color-text-light);
+}
+
+/* Styles pour les icônes sociales (s'il y a un conteneur) */
+.footer__socials-icons {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.footer__socials-icons img {
+    height: 60px; 
+    width: auto;
+}
+
+.footer__partners-logos {
+    display: flex; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: var(--spacing-lg); 
+    
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md); 
+}
+
+.partner-logo {
+    height:100px; 
+    width: auto;
+}

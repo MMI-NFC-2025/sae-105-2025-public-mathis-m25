@@ -3,7 +3,8 @@
     --color-background-dark: #242424; /* Noir Profond (Thème Nuit) */
     --color-text-light: #FFFFFF;     /* Blanc Pur */
     --color-text-secondary: #AAAAAA; /* Gris Clair pour les détails */
-    --color-header: #1D096F; /* Bleu Nuit Profond (Header, Footer) */
+    --color-header: #1D096F; /* Bleu Nuit Profond (Header) */
+    --color-footer: #120448; /* Violet Très Sombre (Footer) */
     
     --color-accent-primary: #00BFFF; /* Bleu Électrique (CTA, Heures, Liens Actifs) */
     --color-accent-secondary: #7CFC00; /* Vert Néon (Écologie, Boutons Secondaires) */
