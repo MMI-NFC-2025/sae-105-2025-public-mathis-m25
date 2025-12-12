@@ -8,6 +8,7 @@
     
     --color-accent-primary: #00BFFF; /* Bleu Électrique (CTA, Heures, Liens Actifs) */
     --color-accent-secondary: #7CFC00; /* Vert Néon (Écologie, Boutons Secondaires) */
+    --color-accent-tertiary: #A52A2A; /* Rouge Brique (Quelques trucs importants) */ 
 
     /* TYPOGRAPHIE */
     --font-family-heading: 'Oswald', sans-serif; 

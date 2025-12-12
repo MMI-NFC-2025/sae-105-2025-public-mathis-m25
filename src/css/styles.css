@@ -255,3 +255,182 @@ h3 { font-size: 1.4rem; }
     height:100px; 
     width: auto;
 }
+
+//* ========================================= */
+/* NOUVELLE SECTION : COMPOSANTS DE LA PAGE DU FESTIVAL (À PROPOS) */
+/* ========================================= */
+
+/* Styles pour le titre de la page À Propos */
+.section--page-hero {
+    /* Styles pour le conteneur du titre */
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+    text-align: center;
+}
+
+/* Styles pour la section du manifeste (contenant l'image et le texte) */
+.section--movement {
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+/* Style de l'image (basé sur la maquette du Fort) */
+.figure-image {
+    margin: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.figure-image__media {
+    width: 75%;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+}
+
+/* Style des sous-titres de concept (en couleur sur la maquette) */
+.article__subtitle--primary {
+    color: var(--color-accent-primary); /* Bleu Électrique */
+    font-size: 1.2rem;
+    margin-top: var(--spacing-lg);
+    text-transform: none; /* Ne pas mettre en majuscules comme les h3 globaux */
+}
+
+.article__heading {
+    font-weight: 700;
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+    font-style: italic;
+    color: var(--color-text-light);
+}
+
+/* Style de la liste (pour enlever les puces noires si le fond est noir) */
+.styled-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: var(--spacing-md);
+}
+
+.styled-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Utilisation de l'accent pour la puce */
+.styled-list li::before {
+    content: '→'; /* Utiliser une flèche ou un caractère spécial */
+    color: var(--color-accent-secondary); /* Vert Néon */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.article__subtitle--primary {
+    color: var(--color-text-light); 
+    font-size: 1.2rem;
+    margin-top: var(--spacing-lg);
+    text-transform: none; 
+}
+
+.article__heading {
+    font-weight: 700;
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+    font-style: italic;
+    
+    color: #A52A2A; 
+}
+
+.footer {
+    background-color: var(--color-footer); 
+    padding: var(--spacing-sm) var(--spacing-md);
+    color: var(--color-text-light);    
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.footer h3 {
+    color: var(--color-text-light); /* Exemple : Titres en Bleu Électrique */
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.footer__links {
+    list-style: none; 
+    padding: 0;
+    margin-bottom: var(--spacing-lg); 
+}
+
+.footer__links a {
+    color: var(--color-text-light);
+    display: block; 
+    padding: var(--spacing-xs) 0;
+    font-size: 0.9rem;
+}
+
+.footer__copyright {
+    font-size: 0.75rem;
+    margin-top: var(--spacing-lg);
+    color: var(--color-text-light);
+}
+
+/* Styles pour les icônes sociales (s'il y a un conteneur) */
+.footer__socials-icons {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.footer__socials-icons img {
+    height: 60px; 
+    width: auto;
+}
+
+.footer__partners-logos {
+    display: flex; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: var(--spacing-lg); 
+    
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md); 
+}
+
+.partner-logo {
+    height:100px; 
+    width: auto;
+}
+
+.mt-lg {
+    margin-top: var(--spacing-lg); /* Par exemple : 32px */
+}
+
+/* AJOUTER CETTE NOUVELLE CLASSE DANS VOS UTILITAIRES CSS */
+.mb-xxl { 
+    margin-bottom: 6rem; /* Une très grande marge, environ 96px ou plus */
+}
+
+//* ========================================= */
+/* NOUVELLE SECTION : COMPOSANTS DE LA PAGE DU PROGRAMME */
+/* ========================================= */
+
+.section--context {
+    margin: var(--spacing-xl) 0;
+    
+    background-color: var(--color-background-medium); /* Utiliser un gris foncé */
+    
+    padding: var(--spacing-xl) var(--spacing-md);
+    
+    border-radius: var(--border-radius); 
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.section--context .section__paragraph--narrow {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /
+}
+
+.section--context .figure-image {
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
